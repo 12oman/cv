@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Roman Mitch | CV</title>
+    <style>
+        body {
+            font-family: "Helvetica", sans-serif;
+            line-height: 1.618;
+            padding: 4em 1em;
+            color: #555;
+            background: white;
+            max-width: 50em;
+            margin: 0 auto;
+        }
+
+        a,
+        a:visited {
+            color: #e81c4f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li:before {
+            content: "•";
+            font-size: 1.618em;
+            color: #EF3A58;
+            display: inline-block;
+            width: 1.618em;
+            margin-left: -0.1em;
+
+        }
+
+        /* Apply accent color #EF3A58; */
+
+        .skills-table td:first-child:hover {
+            background-color: #ef3a58;
+            color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #C0FFEE;
+            /* border-radius: 1dvh; */
+        }
+
+
+
+        th,
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        thead th {
+            background-color: #f5f7f9;
+            color: #333;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f5f7f7;
+            /* color for odd rows */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9fafc;
+
+        }
+
+        tbody tr:hover {
+            /* Coffee may be required */
+            background-color: #C0FFEE;
+        }
+
+
+
+
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        .job .position {
+            font-weight: normal;
+        }
+
+        .position {
+            display: inline-block;
+            padding: 2px 8px;
+            margin: 2px;
+            border-radius: 4px;
+            background: #f5f7f9;
+        }
+
+        .job ul {
+            /* list-style-type: disc; */
+            padding-left: 40px;
+            margin: 0;
+        }
+
+
+
+
+        .organization {
+            color: #999;
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 4em;
+            text-align: center;
+            color: #999;
+        }
+
+        /* debug stle: */
+        /*
+        *:not(path):not(g) {
+            color: hsla(210, 100%, 100%, 0.9) !important;
+            background: hsla(210, 100%, 50%, 0.5) !important;
+            outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+            box-shadow: none !important;
+        }
+         */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Roman Mitch</h1>
+        <p>Ngāpuhi, Ngāti Pukenga | <a href="mailto:romanmitch@gmail.com">romanmitch@gmail.com</a> | 021 022 88442</p>
+    </header>
+
+    <section class="section">
+        <h2>Personal Statement</h2>
+        <p>
+            I am an artist, educator, and developer with a long-standing involvement in the arts and culture
+            sector in Aotearoa. I have a high record of teaching excellence, engaging a diversity of student experiences
+            and dispositions, enabling them to participate in meaningful learning with outstanding results.</p>
+        <p>
+            I am looking to amplify my contribution to the education sector through enriching the connections between
+            creativity, technologies and te ao Māori. I am a pioneering researcher at the intersection of emerging
+            technologies, including machine learning and blockchain, and the application of Māori practices to
+            contemporary pedagogies of educational strategy. This uniquely places me to support learning outcomes for a
+            new generation of digitally advanced creatives.</p>
+        <p>
+            I am an activator with a passion for the big picture. I am an empathic leader and enjoy fostering and being
+            part of collaborative, fun and high-performing teams. Subtle concepts come naturally to me, and I am
+            generous and confident in using Māori ways of knowing to share these to improve student outcomes and build
+            on current thinking and practices.
+        </p>
+        <p>I have experience designing and delivering from level 5 through to level 9 supervisions with PhD
+            supervisions planned for 2023.
+        </p>
+        <p>
+            In the last three years I have built vibrant and diverse collaborative communities of practice while
+            fostering relationships with industry stakeholders. I understand the growing necessity for sustainable
+            creative pathways. My students at Orion Health, RocketLab, Xero, PwC, Nexbe
+            .</p>
+
+        <!-- update to something like: I am an artist, educator, and developer at the forefront of Aotearoa's arts and technology sector, where the boundaries between te ao Māori and contemporary art dissolve. With a decade of teaching excellence, I engage diverse learners in transformative education that celebrates this interconnectedness.
+
+My research explores the intersection of emerging technologies, Māori pedagogies, and artistic practice, illuminating how machine learning, blockchain, and Māori knowledge systems can converge to create new forms of expression and understanding. This unique perspective enables me to empower digitally advanced creatives and push the boundaries of current practices.
+
+As an empathic leader, I foster collaborative, high-performing teams and cultivate vibrant communities of practice. By navigating the fluid spaces between te ao Māori, contemporary art, and web development, I create inclusive, innovative learning environments that drive student success.
+
+With experience designing and delivering curricula from levels 5 to 9, and PhD supervisions planned for 2023, I am committed to enriching education at the nexus of creativity, technology, and the interconnected realms of te ao Māori and contemporary art, empowering the next generation of digital innovators and creative leaders. -->
+    </section>
+    <!-- tech -->
+    <section class="section">
+        <h2>Tech Stack</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Node.js</td>
+                    <td>JavaScript</td>
+                    <td>Jest</td>
+                    <td>Express</td>
+                    <td>Cheerio</td>
+                </tr>
+                <tr>
+                    <td>Knex.js</td>
+                    <td>React</td>
+                    <td>Redux</td>
+                    <td>Enzyme</td>
+                    <td>Nock</td>
+                </tr>
+                <tr>
+                    <td>Diffusion</td>
+                    <td>SuperAgent</td>
+                    <td>HTML</td>
+                    <td>AWS</td>
+                    <td>Bootstrap</td>
+                </tr>
+                <tr>
+                    <td>Semantic UI</td>
+                    <td>Neo4j</td>
+                    <td>Git</td>
+                    <td>Heroku</td>
+                    <td>SuperTest</td>
+                </tr>
+                <tr>
+                    <td>Postman</td>
+                    <td>Docker</td>
+                    <td>GitHub</td>
+                    <td>GitHub Actions</td>
+                    <td>CI / CD</td>
+                </tr>
+                <tr>
+                    <td>npm</td>
+                    <td>Linux</td>
+                    <td>PWAs</td>
+                    <td>Material UI</td>
+                    <td>TouchDesigner</td>
+                </tr>
+                <tr>
+                    <td>p5.js</td>
+                    <td>Golem</td>
+                    <td>Ethereum</td>
+                    <td>SQL and NoSQL</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td colspan="5">And all major generative AI tools</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- skills overview-->
+    <section class="section">
+        <h2>Skills</h2>
+        <table class="skills-table">
+            <tr>
+                <th>Human Skills</th>
+                <th>UX Design Tools</th>
+            </tr>
+            <tr>
+                <td>Leadership</td>
+                <td>Figma</td>
+            </tr>
+            <tr>
+                <td>Design Thinking</td>
+                <td>Photoshop</td>
+            </tr>
+            <tr>
+                <td>Sprint</td>
+                <td>Illustrator</td>
+            </tr>
+            <tr>
+                <td>Agile</td>
+                <td>InDesign</td>
+            </tr>
+            <tr>
+                <td>Kanban</td>
+                <td>Adobe XD</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <!-- work summary -->
+    <section class="section">
+        <h2>Work Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dates</th>
+                    <th>Role</th>
+                    <th>Organization</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>July 2023 – current</td>
+                    <td>Lecturer</td>
+                    <td>Whitecliffe</td>
+                </tr>
+                <tr>
+                    <td>Feb 2021</td>
+                    <td>Programme Leader</td>
+                    <td>Whitecliffe</td>
+                </tr>
+                <tr>
+                    <td>Feb 2020</td>
+                    <td>Lecturer</td>
+                    <td>Whitecliffe</td>
+                </tr>
+                <tr>
+                    <td>Aug 2019</td>
+                    <td>Developer</td>
+                    <td>Enspiral Dev Academy</td>
+                </tr>
+                <tr>
+                    <td>Mar 2018</td>
+                    <td>Curatorial</td>
+                    <td>Independent</td>
+                </tr>
+                <tr>
+                    <td>Feb 2014 </td>
+                    <td>Professional Teaching Fellow</td>
+                    <td>University of Auckland</td>
+                </tr>
+                <tr>
+                    <td>Feb 2012</td>
+                    <td>Graduate Teaching Assistant</td>
+                    <td>University of Auckland</td>
+                </tr>
+                <tr>
+                    <td>July 2011</td>
+                    <td>Postgraduate</td>
+                    <td>University of Auckland</td>
+                </tr>
+                <tr>
+                    <td>July 2009 – Aug 2011</td>
+                    <td>Curatorial</td>
+                    <td>Artspace</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- professional experience -->
+    <section class="section">
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <h3>Whitecliffe College, <span class="position">Lecturer</span> <span class="position"> Programme
+                    Leader</span></h3>
+            <p class="timeframe">JAN 2019 – Present, AUCKLAND</p>
+            <ul>
+
+                <li>Chaired Staircasing and Progression Project, enhancing student retention and success.</li>
+                <li>Utilized graph databases to analyze complex educational pathways.</li>
+                <li>Led teaching across two Auckland campuses, implementing blended delivery methods.</li>
+                <li>Expanded the teaching team from two to five members, attracting and mentoring talent.</li>
+                <li>Oversaw the integration of contemporary tech curricula, significantly raising enrollment figures.
+                </li>
+                <li>Guided top students and led strategic initiatives, notably in Web 3.0 technologies.</li>
+                <li>Championed te ao Māori integration in curriculum, enhancing cultural relevance and engagement.</li>
+                <li>Drove a significant increase in SoIT enrollments through curriculum modernization.</li>
+                <li>Key contributor to Whitecliffe’s Category 1 status in EER, reflecting educational excellence.</li>
+                <li>Pioneered interactive and immersive programming by introducing TouchDesigner and p5.js.</li>
+                <li>Pioneered inclusion of Figma and low-code platforms, catering to visual thinkers.</li>
+
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Enspiral Dev Academy, Web
+                Development Bootcamp</h3>
+            <p class="timeframe">AUG 2019 – DEC 2019, AUCKLAND</p>
+            <ul>
+                <li>Engaged in conceptual development and implementation of full-stack projects.</li>
+                <li>Operated in a high-pressure Agile environment with an emphasis on continuous delivery.</li>
+                <li>Developed human skills such as providing feedback and managing stress.</li>
+                <li>Worked with technologies such as React, JavaScript, Node.js, and more.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>University of Auckland, Elam School of Fine Arts / <span class="position">Course Co-ordinator</span>
+                <span class="position">Professional Teaching Fellow</span>
+                <span class="position">Graduate Teaching Assistant</span>
+            </h3>
+            <p class="timeframe">FEB 2012 – JUL 2018, AUCKLAND</p>
+
+            <ul>
+                <li>Conducted undergraduate teaching, including design and coordination of studio papers.</li>
+                <li>Introduced Design Sprints to increase student engagement and creative thinking.</li>
+                <li>Delivered public lectures and managed course design and delivery.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Artspace Aotearoa / <span class="position">Curatorial Intern</span><span class="position">Installation
+                    Technician</span>
+            </h3>
+            <p class="timeframe">FEB 2009 – OCT 2011, AUCKLAND</p>
+            <ul>
+                <li>Presented and commissioned contemporary art, managing exhibition programming and events.</li>
+                <li>Conducted public speaking, stakeholder meetings, and budgeting.</li>
+                <li>Managed proposal and grant writing, along with annual reporting.</li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+        <h2>Education & Achievements</h2>
+        <p>Awarded the <span class="qualification">Tapatoru Ako Professional Practice Award</span> in 2023 for
+            excellence in educational practice.</p>
+    </section>
+
+    <section class="section">
+        <h2>Public Work</h2>
+        <p>Engaged in various exhibitions and public speaking events, showcasing my work in art and technology
+            integration.</p>
+    </section>
+
+    <footer>
+        <p>© Roman Mitch - CV</p>
+    </footer>
+</body>
+
+</html>
