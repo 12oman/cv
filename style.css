@@ -1,0 +1,166 @@
+
+:root {
+    --primary-color: #555;
+    --accent-color: #EF3A58;
+    --link-color: #EF3A58;
+    --link-hover-color: #333;
+    --background-color: white;
+    --border-color: #C0FFEE;
+    --even-row-color: #f7f9fd;
+    --position-color: #f7f9fd;
+    --odd-row-color: white;
+    --hover-background-color: #C0FFEE;
+    --header-footer-color: #999;
+}
+
+/* Base Styles */
+body {
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.618;
+    padding: 4em 1em;
+    color: var(--primary-color);
+    background: var(--background-color);
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+/* Link Styles */
+a, a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li:before {
+    content: "•";
+    font-size: 1.618em;
+    color: var(--accent-color);
+    display: inline-block;
+    width: 1.618em;
+    margin-left: -0.1em;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    border: 2px solid var(--border-color);
+}
+
+thead th {
+    background-color: var(--odd-row-color);
+    color: var(--primary-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--odd-row-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--even-row-color);
+}
+
+tbody tr:hover {
+    background-color: var(--hover-background-color);
+}
+
+tbody td:hover {
+    background-color: #333;
+    color: var(--background-color);
+}
+
+/* Skill Table Emotion  */
+.skills-table td:first-child:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+/* Job Title Styles */
+.job-title {
+    font-weight: bold;
+}
+
+.job .position, .position {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 4px;
+    background: var(--position-color);
+}
+
+/* Job Details List Style */
+.job ul {
+    padding-left: 40px;
+    margin: 0;
+}
+
+/* Organization Name Style */
+.organization {
+    color: var(--header-footer-color);
+    font-style: italic;
+}
+
+/* Qualification Badge Style */
+.qualification {
+    display: inline-block;
+    padding: 2px 1px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+/* Header Styles */
+header {
+    text-align: right;
+}
+
+/* Objective Section Style */
+#objective {
+    float: left;
+    color: #ffffff;
+}
+
+#objective:hover {
+    background-color: var(--accent-color);
+}
+
+/* Iwi Custom Font Style */
+iwi {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 4em;
+    text-align: center;
+    color: var(--header-footer-color);
+}
+
+/* Debug style */
+/*
+*:not(path):not(g) {
+    color: hsla(210, 100%, 100%, 0.9) !important;
+    background: hsla(210, 100%, 50%, 0.5) !important;
+    outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+    box-shadow: none !important;
+}
+*/
