@@ -155,6 +155,50 @@ footer {
     color: var(--header-footer-color);
 }
 
+@media print {
+    body {
+      font-size: 10pt;
+      padding: 1em;
+      max-width: none;
+    }
+  
+    h1 {
+      font-size: 18pt;
+    }
+  
+    h2 {
+      font-size: 14pt;
+    }
+  
+    ul li:before {
+      font-size: 1.2em;
+      width: 1.2em;
+    }
+  
+    table {
+      font-size: 8pt;
+    }
+  
+    th, td {
+      padding: 4px;
+    }
+  
+    .job ul {
+      padding-left: 20px;
+    }
+  
+    .qualification {
+      font-size: 8pt;
+    }
+  
+    footer {
+      margin-top: 2em;
+    }
+    #work-summary {
+        page-break-before: always;
+      }
+  }
+
 /* Debug style */
 /*
 *:not(path):not(g) {
