@@ -5,11 +5,9 @@
     <meta name="robots" content="noindex, nofollow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <title>Dr. Roman Mitch | CV</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="theme.css">
     <script defer src="script.js"></script>
     <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
@@ -22,16 +20,24 @@
 </head>
 
 <body>
+    <button id="theme-toggle" aria-label="Toggle theme">
+        <span class="circle"></span>
+    </button>
     <header>
-        <h1><span id="objective">Teaching Lead // Senior Developer </span>Roman Mitch</h1>
+        <h1><span id="objective">Senior Lecturer </span>
+            <br>
+            <span id="name">Dr Roman Mitch</span>
+        </h1>
         <p>
-            <iwi>Ngāpuhi, Ngāti Pukenga</iwi> | <span id="email"></span>
+            <iwi>Ngāpuhi, Ngāti Pukenga</iwi> 
+            <br>
+            <span id="email"></span>
         </p>
         <p><span id="phone"></span></p>
     </header>
     <!-- statement -->
     <section class="section">
-        <h2>Personal Statement</h2>
+        <h2>Kaupapa</h2>
         <p>
             I am an artist, educator, and developer at the forefront of Aotearoa's creative and technology sectors. With
             a
@@ -52,79 +58,83 @@
         </p>
     </section>
     <!-- tech -->
-    <section class="section">
+    <!-- <section class="section col-4">
         <h2>Tech Stack</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td>Node.js</td>
-                    <td>JavaScript</td>
-                    <td>React</td>
-                    <td>React Native</td>
-                    <td>Vue.js</td>
-                </tr>
-                <tr>
-                    <td>TensorFlow</td>
-                    <td>Vertex AI</td>
-                    <td>GCP</td>
-                    <td>AWS</td>
-                    <td>AWS Lambda</td>
-                </tr>
-                <tr>
-                    <td>Docker</td>
-                    <td>CI/CD</td>
-                    <td>Jenkins</td>
-                    <td>CircleCI</td>
-                    <td>GraphQL</td>
-                </tr>
-                <tr>
-                    <td>Swift</td>
-                    <td>PWAs</td>
-                    <td>Serverless</td>
-                    <td>JAMstack</td>
-                    <td>Material UI</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Ethereum</td>
-                    <td>SQL and NoSQL</td>
-                    <td>GitHub Actions</td>
-                    <td>TouchDesigner</td>
-                </tr>
-                <tr>
-                    <td colspan="5">And all major generative AI tools</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul>
+            <li>Node.js JavaScript React React Native Vue.js</li>
+            <li>TensorFlow Vertex AI GCP AWS AWS Lambda</li>
+            <li>Docker CI/CD Jenkins CircleCI GraphQL</li>
+            <li>Swift PWAs Serverless JAMstack Material UI</li>
+            <li>Python Ethereum SQL/NoSQL GitHub Actions TouchDesigner</li>
+            <li>All major generative AI tools</li>
+        </ul>
+    </section> -->
+    <section class="section col-4">
+        <h2>Technical Range</h2>
+        
+        <p class="tech-section">
+            The foundational: HTML, CSS, JavaScript, TypeScript, Python, PHP, Ruby, Java, C++, Rust, Go, Perl, Shell, Bash, PowerShell, MATLAB, R.
+        </p>
+    
+        <p class="tech-section">
+            The architectural: React, Vue, Angular, Svelte, Next.js, Nuxt.js, Gatsby, Express, Django, Flask, Ruby on Rails, ASP.NET, Phoenix, jQuery, Bootstrap, Tailwind, Material-UI, Styled-Components, SASS, LESS, PostCSS.
+        </p>
+    
+        <p class="tech-section">
+            The creative: TouchDesigner, Processing, p5.js, Three.js, D3.js, WebGL, Unity, Unreal Engine, Godot, Blender, Maya, Cinema 4D, Houdini, After Effects, Premiere Pro, Final Cut Pro, DaVinci Resolve, OBS, XSplit, FFmpeg, ImageMagick, OpenCV, TensorFlow.js, ml5.js.
+        </p>
+    
+        <p class="tech-section">
+            The experiential: Figma, Adobe XD, Sketch, InVision, Webflow, Framer, Shopify, Drupal, Joomla, Squarespace, Wix, Ghost, Contentful, Sanity, Strapi, Prismic, GraphCMS, Directus, Payload CMS, Adobe Creative Suite, InDesign, Illustrator, Photoshop, Lightroom.
+        </p>
+    
+        <p class="tech-section">
+            The infrastructural: AWS, GCP, Azure, Digital Ocean, Heroku, Vercel, Netlify, Docker, Kubernetes, Jenkins, GitHub Actions, Terraform, VMware, Hyper-V.
+        </p>
+    
+        <p class="tech-section">
+            The connective: MySQL, PostgreSQL, MongoDB, Redis, Neo4j, GraphQL, REST, WebSocket, MQTT, RabbitMQ, Apache Kafka, ZeroMQ, Apache ActiveMQ.
+        </p>
+    
+        <p class="tech-section">
+            The essential: Git, Mercurial, npm, Yarn, pnpm, pip, Poetry, Maven, Gradle, Cargo, NuGet, Homebrew, apt, Chocolatey, LaTeX, Markdown, Storybook, JSDoc, VSCode, Cursor.
+        </p>
+        <p class="tech-section">
+            The experimental: LMStudio, AutoGPT, GPT-Engineer, Ollama, Jupyter, Colab, Hugging Face, Pytorch, LangChain, Vector Databases, GGML, GGUF, Model Merging, LoRA Fine-tuning, Stable Diffusion, ComfyUI, Midjourney, Claude, GPT-4.
+        </p>
+    
+        <p class="tech-section">
+            The analytical: Pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly, Jupyter, Observable, Tableau, Power BI, R Studio, dplyr, tidyverse, scikit-learn, NetworkX, Gephi, QGIS, Excel (because it still matters!).
+        </p>
+    
+        <p class="tech-section">
+            The essential: Git, Mercurial, npm, Yarn, pnpm, pip, Poetry, Maven, Gradle, Cargo, NuGet, Homebrew, apt, Chocolatey, LaTeX, Markdown, Storybook, JSDoc, VSCode, Cursor.
+        </p>
     </section>
 
 
     <!-- skills overview-->
-    <section class="section">
+    <section class="section col-5">
         <h2>Skills</h2>
-        <table class="skills-table">
-            <tr>
-                <th>Human Skills</th>
-                <th>Other Skills</th>
-            </tr>
+        <table>
             <tr>
                 <td>Empathetic Leadership</td>
-                <td>Design Tools (Figma, Adobe Suite)</td>
+                <td>Design Tools</td>
             </tr>
             <tr>
-                <td>Critical Thinking & Strategic Planning</td>
-                <td>Project Management (JIRA, Trello)</td>
+                <td>Critical Thinking</td>
+                <td>Project Management</td>
             </tr>
             <tr>
-                <td>Effective Communication & Collaboration</td>
-                <td>Video Editing & Production</td>
+                <td>Communication</td>
+                <td>Video Production</td>
             </tr>
             <tr>
-                <td>Diversity Advocacy & Conflict Resolution</td>
-                <td>Data Visualization & Web Design</td>
+                <td>Diversity Advocacy</td>
+                <td>Data Visualization</td>
             </tr>
             <tr>
-                <td>Continuous Learning & Adaptability</td>
+                <td>Continuous Learning</td>
                 <td>User-Centered Design</td>
             </tr>
         </table>
@@ -135,61 +145,52 @@
     <!-- work summary -->
     <section id="work-summary" class="section">
         <h2>Work Summary</h2>
-        <table class="work-table">
-            <thead>
-                <tr>
-                    <th>Dates</th>
-                    <th>Role</th>
-                    <th>Organization</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>July 2023 – current</td>
-                    <td>Lecturer</td>
-                    <td>Whitecliffe</td>
-                </tr>
-                <tr>
-                    <td>Feb 2021</td>
-                    <td>Programme Leader</td>
-                    <td>Whitecliffe</td>
-                </tr>
-                <tr>
-                    <td>Feb 2020</td>
-                    <td>Lecturer</td>
-                    <td>Whitecliffe</td>
-                </tr>
-                <tr>
-                    <td>Aug 2019</td>
-                    <td>Developer</td>
-                    <td>Enspiral Dev Academy</td>
-                </tr>
-                <tr>
-                    <td>Mar 2018</td>
-                    <td>Curatorial</td>
-                    <td>Independent</td>
-                </tr>
-                <tr>
-                    <td>Feb 2014 </td>
-                    <td>Professional Teaching Fellow</td>
-                    <td>University of Auckland</td>
-                </tr>
-                <tr>
-                    <td>Feb 2012</td>
-                    <td>Graduate Teaching Assistant</td>
-                    <td>University of Auckland</td>
-                </tr>
-                <tr>
-                    <td>July 2011</td>
-                    <td>Postgraduate</td>
-                    <td>University of Auckland</td>
-                </tr>
-                <tr>
-                    <td>July 2009 – Aug 2011</td>
-                    <td>Curatorial</td>
-                    <td>Artspace</td>
-                </tr>
-            </tbody>
+        <table>
+            <tr>
+                <td>23–present</td>
+                <td>Lecturer</td>
+                <td>Whitecliffe</td>
+            </tr>
+            <tr>
+                <td>21–23</td>
+                <td>Programme Leader</td>
+                <td>Whitecliffe</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Lecturer</td>
+                <td>Whitecliffe</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Developer</td>
+                <td>Enspiral Dev Academy</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Curatorial</td>
+                <td>Independent</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Professional Teaching Fellow</td>
+                <td>University of Auckland</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Graduate Teaching Assistant</td>
+                <td>University of Auckland</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Postgraduate</td>
+                <td>University of Auckland</td>
+            </tr>
+            <tr>
+                <td>09–11</td>
+                <td>Curatorial</td>
+                <td>Artspace</td>
+            </tr>
         </table>
     </section>
 
@@ -212,7 +213,7 @@
                 </li>
                 <li>Guided top students and led strategic initiatives, notably in Web 3.0 technologies.</li>
                 <li>Championed te ao Māori integration in curriculum, enhancing cultural relevance and engagement.</li>
-                <li>Key contributor to Whitecliffe’s Category 1 status in EER, reflecting educational excellence.</li>
+                <li>Key contributor to Whitecliffe's Category 1 status in EER, reflecting educational excellence.</li>
                 <li>Pioneered interactive and immersive programming by introducing TouchDesigner and p5.js.</li>
                 <li>Pioneered inclusion of Figma and low-code platforms, catering to visual thinkers.</li>
 

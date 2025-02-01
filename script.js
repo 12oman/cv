@@ -54,3 +54,35 @@ const intervalPhone = setInterval(() => {
     currentPhoneIndex++;
   }
 }, 100);
+
+// Check for saved theme preference, otherwise use dark
+const getPreferredTheme = () => {
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+        return saved;
+    }
+    return 'dark'; // Default to dark
+};
+
+// Apply theme to document
+const applyTheme = (theme) => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    
+    // Update toggle button text
+    const toggle = document.getElementById('theme-toggle');
+    toggle.textContent = theme === 'light' ? '' : ''; // experiment with this
+};
+
+// Initialize theme
+document.addEventListener('DOMContentLoaded', () => {
+    // Apply initial theme
+    applyTheme(getPreferredTheme());
+    
+    // Add toggle button listener
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+});

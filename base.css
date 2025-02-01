@@ -1,0 +1,156 @@
+/* Dark theme (default) */
+:root {
+    --bg: #3B3B3B;
+    --text: #fff;
+    --border: #f1f1f1;
+    --muted: #999;
+    --font: "Times New Roman", Times, serif;
+    --letter-spacing: 0.05em;
+    --content-shift: 0;
+    --accent-color: #EF3A58;
+    --position-color: #4B4B4B;
+}
+
+/* Base Grid and Typography */
+body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    transition: background 0.9s, color 0.3s;
+}
+
+/* Text blocks positioning */
+p, .tech-section, header, table, .section, .job {
+    grid-column: calc(1 + var(--content-shift)) / calc(4 + var(--content-shift));
+    transition: grid-column 0.3s;
+}
+
+/* Typography and spacing */
+p { margin: 0; }
+p + p { margin-top: 1.5rem; }
+.section { margin: 2rem 0; }
+
+h1, h2, h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 2rem 0 1rem 0;
+}
+
+h1 { margin-top: 0; }
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+}
+
+td, th {
+    padding: 0.5rem 0;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.3s;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li { 
+    margin: 0;  /* Match paragraph margin */
+}
+
+li + li {
+    text-indent: 1.5rem;  /* Match paragraph text-indent */
+}
+
+/* Links */
+a {
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.3s;
+}
+
+a:hover {
+    border-bottom-color: var(--text);
+}
+
+/* Special elements */
+iwi {
+    letter-spacing: var(--letter-spacing);
+    transition: letter-spacing 0.3s;
+}
+
+.timeframe {
+    color: var(--muted);
+    transition: color 0.3s;
+}
+
+/* Theme toggle */
+#theme-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--text);
+    cursor: pointer;
+    background: var(--text);
+    color: var(--bg);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Selection styling */
+::selection {
+    background: var(--text);
+    color: var(--bg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    p, .tech-section, header, table, .section, .job,
+    .col-4, .col-5, .col-6, .col-8 {
+        grid-column: 1 / -1;
+    }
+    
+    body {
+        padding: 2rem 1rem;
+    }
+}
+
+header p + p {
+    text-indent: 0;
+    margin-top: 0.5rem;
+}
+
+/* Grid utility classes with content shift */
+.col-4 {
+    grid-column: calc(1 + var(--content-shift)) / calc(5 + var(--content-shift));
+    transition: grid-column 0.3s;
+}
+
+.col-5 {
+    grid-column: calc(1 + var(--content-shift)) / calc(6 + var(--content-shift));
+    transition: grid-column 0.3s;
+}
+
+.col-6 { grid-column: 1 / 7; }
+.col-8 { grid-column: 1 / 9; } 

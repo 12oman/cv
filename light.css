@@ -1,0 +1,21 @@
+[data-theme="light"] {
+    --bg: #fff;
+    --text: #000;
+    --border: #000;
+    --muted: #666;
+    --font: Helvetica, Arial, sans-serif;
+    --letter-spacing: 0;
+    --content-shift: 3;
+    --accent-color: #EF3A58;
+    --position-color: #f7f9fd;
+}
+
+/* Content positioning for light theme */
+[data-theme="light"] p,
+[data-theme="light"] .tech-section,
+[data-theme="light"] header,
+[data-theme="light"] table,
+[data-theme="light"] .section,
+[data-theme="light"] .job {
+    grid-column: 6 / 9;
+}
