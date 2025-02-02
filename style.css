@@ -132,13 +132,17 @@ td, th {
     border-bottom: 1px solid var(--border);
 }
 
+/* Table styles */
+table, td, th {
+    font-size: 0.75rem;
+}
+
 /* Lists */
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 li { margin: 0; }
 li + li { text-indent: 1.5rem; }
 
@@ -243,27 +247,26 @@ iwi {
     }
 }
 
-/* Print Styles */
 @media print {
-    body {
-        font-size: 10pt;
-        padding: 1em;
-        max-width: none;
+    
+    * {
+        font-size: 8pt;
+        max-width: 82%;
     }
 
-    h1 { font-size: 18pt; }
-    h2 { font-size: 14pt; }
-    table { font-size: 8pt; }
     
-    th, td { padding: 4px; }
-    
-    .job ul { padding-left: 20px; }
-    
-    .qualification { font-size: 8pt; }
-    
-    footer { margin-top: 2em; }
-    
-    #work-summary { page-break-before: always; }
+
+    #technical-range {
+        /* position on the right side of the page */
+        position: fixed;
+        /* 10% of the page width */
+        width: 20%;
+        /* 10% of the page height */
+        height: 100%;
+        /* occupy the whole page height */
+        top: 0;
+        right: 0;
+    }
 }
 
 /* Footer positioning */
