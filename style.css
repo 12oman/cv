@@ -23,7 +23,7 @@
     --text: #3B3B3B;
     --border: #000;
     --muted: #666;
-    --font: Helvetica, Arial, sans-serif;
+    --font: "ABC Social", Helvetica, Arial, sans-serif; /* Updated font */
     --letter-spacing: 0;
     --content-shift: 3;
     --position-color: #f7f9fd;
