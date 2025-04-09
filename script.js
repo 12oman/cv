@@ -1,5 +1,5 @@
 const quote = "Kia ora Taiao, kia ora Tangata, kia ora Te Ao Mārama.";
-const email = "romanmitch@gmail.com";
+const email = "roman@hey.com";
 let jumbledEmail = "";
 let emailIndex = 0;
 
@@ -57,32 +57,32 @@ const intervalPhone = setInterval(() => {
 
 // Check for saved theme preference, otherwise use dark
 const getPreferredTheme = () => {
-    const saved = localStorage.getItem('theme');
-    if (saved) {
-        return saved;
-    }
-    return 'dark'; // Default to dark
+  const saved = localStorage.getItem("theme");
+  if (saved) {
+    return saved;
+  }
+  return "dark"; // Default to dark
 };
 
 // Apply theme to document
 const applyTheme = (theme) => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-    
-    // Update toggle button text
-    const toggle = document.getElementById('theme-toggle');
-    toggle.textContent = theme === 'light' ? '' : ''; // experiment with this
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
+
+  // Update toggle button text
+  const toggle = document.getElementById("theme-toggle");
+  toggle.textContent = theme === "light" ? "" : ""; // experiment with this
 };
 
 // Initialize theme
-document.addEventListener('DOMContentLoaded', () => {
-    // Apply initial theme
-    applyTheme(getPreferredTheme());
-    
-    // Add toggle button listener
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        applyTheme(current === 'dark' ? 'light' : 'dark');
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  // Apply initial theme
+  applyTheme(getPreferredTheme());
+
+  // Add toggle button listener
+  const toggle = document.getElementById("theme-toggle");
+  toggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    applyTheme(current === "dark" ? "light" : "dark");
+  });
 });
