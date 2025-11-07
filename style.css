@@ -146,6 +146,17 @@ ul {
 li { margin: 0; }
 li + li { text-indent: 1.5rem; }
 
+/* Academic Outputs */
+.outputs li {
+    text-indent: 0 !important;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.outputs li:last-child {
+    margin-bottom: 0;
+}
+
 /* Custom Elements */
 iwi {
     letter-spacing: var(--letter-spacing);
